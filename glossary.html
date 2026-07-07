@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Glossary — The Commerce Almanac</title>
+<meta name="description" content="Searchable dictionary of business and economics terms across seven categories." />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="ticker"><div class="ticker-track" id="tickerTrack"></div></div>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">EST. TODAY</span>
+      <span class="brand-name">The Commerce Almanac</span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="quiz.html">Quiz &amp; Games</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section style="padding-bottom: 1rem;">
+    <div class="wrap">
+      <p class="eyebrow">Volume I</p>
+      <h2 style="font-size: 2.1rem; margin-bottom: 0.6rem;">The Glossary</h2>
+      <p style="max-width: 60ch; color:#4a4d54;">Every term is filed under one of seven sections, just like the thumb-index of a printed dictionary. Use the tabs to browse a section, or search across all of them at once.</p>
+    </div>
+  </section>
+
+  <section style="padding-top: 0.5rem;">
+    <div class="wrap glossary-shell">
+      <nav class="index-tabs" id="indexTabs" aria-label="Glossary categories"></nav>
+
+      <div>
+        <div class="search-row">
+          <input type="text" id="searchInput" class="search-input" placeholder="Search a term or definition — e.g. 'inflation', 'balance sheet'…" />
+        </div>
+        <p class="result-count" id="resultCount"></p>
+        <div id="entryList"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>The Commerce Almanac</span>
+    <span><a href="quiz.html" style="color:var(--gold); text-decoration:none;">Test yourself in Quiz &amp; Games →</a></span>
+  </div>
+</footer>
+
+<script src="js/terms-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/glossary.js"></script>
+</body>
+</html>

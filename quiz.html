@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Quiz &amp; Games — The Commerce Almanac</title>
+<meta name="description" content="Practice business and economics terms with a multiple-choice quiz, flashcards, and a matching game." />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="ticker"><div class="ticker-track" id="tickerTrack"></div></div>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">EST. TODAY</span>
+      <span class="brand-name">The Commerce Almanac</span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="quiz.html">Quiz &amp; Games</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section style="padding-bottom: 1rem;">
+    <div class="wrap">
+      <p class="eyebrow">Volume II</p>
+      <h2 style="font-size: 2.1rem; margin-bottom: 0.6rem;">Quiz &amp; Games</h2>
+      <p style="max-width: 60ch; color:#4a4d54;">Three ways to practise: a scored multiple-choice quiz, flip-through flashcards, and a timed matching game. Terms are pulled at random from the full glossary each round.</p>
+    </div>
+  </section>
+
+  <section style="padding-top: 0.5rem;">
+    <div class="wrap">
+      <div class="mode-switch" role="tablist" aria-label="Choose a game mode">
+        <button class="mode-btn active" data-panel="panel-quiz">① Multiple Choice Quiz</button>
+        <button class="mode-btn" data-panel="panel-flash">② Flashcards</button>
+        <button class="mode-btn" data-panel="panel-match">③ Matching Game</button>
+      </div>
+
+      <!-- QUIZ PANEL -->
+      <div class="game-panel active" id="panel-quiz">
+        <div class="scoreboard" id="quizScoreboard"></div>
+        <div id="quizStage"></div>
+      </div>
+
+      <!-- FLASHCARD PANEL -->
+      <div class="game-panel" id="panel-flash">
+        <div class="flash-stage">
+          <p class="flash-hint" id="flashCounter"></p>
+          <div class="flashcard" id="flashcard">
+            <div class="flashcard-inner">
+              <div class="flash-face flash-front" id="flashFront"></div>
+              <div class="flash-face flash-back" id="flashBack"></div>
+            </div>
+          </div>
+          <p class="flash-hint">Tap the card to flip it</p>
+          <div class="flash-controls">
+            <button class="btn btn-outline" id="flashPrev">← Previous</button>
+            <button class="btn btn-primary" id="flashNext">Next →</button>
+            <button class="btn btn-outline" id="flashShuffle">Shuffle deck</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MATCHING GAME PANEL -->
+      <div class="game-panel" id="panel-match">
+        <div class="match-grid">
+          <div class="match-col">
+            <h3>Terms</h3>
+            <div id="matchTerms"></div>
+          </div>
+          <div class="match-col">
+            <h3>Definitions</h3>
+            <div id="matchDefs"></div>
+          </div>
+        </div>
+        <p class="match-status" id="matchStatus"></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>The Commerce Almanac</span>
+    <span><a href="glossary.html" style="color:var(--gold); text-decoration:none;">← Back to the glossary</a></span>
+  </div>
+</footer>
+
+<script src="js/terms-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/quiz.js"></script>
+</body>
+</html>
